@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="iiCellPhone.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".5*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <BoxView BackgroundColor="SlateBlue"/>
+        <Label Text="Isaac's Favorite Phone"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               TextColor="White"
+               FontSize="30"/>
+        <Entry x:Name="EntryBrand"
+               Grid.Row="1"
+               Placeholder="Enter Brand"
+               HorizontalTextAlignment="Center"
+               VerticalOptions="Center"
+               FontSize="30"
+               />
+        <Entry x:Name="EntryModel"
+               Grid.Row="2"
+               Placeholder="Enter Model"
+               HorizontalTextAlignment="Center"
+               VerticalOptions="Center"
+               FontSize="30"
+               />
+        <Entry x:Name="EntryPrice"
+               Grid.Row="3"
+               Placeholder="Enter Price"
+               HorizontalTextAlignment="Center"
+               VerticalOptions="Center"
+               FontSize="30"/>
+        <Label Text="Results..."
+               x:Name="LblResults"
+               Grid.Row="4"
+               FontSize="30"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               />
+        <Button x:Name="BtnSubmit"
+                Text="Submit"
+                FontSize="30"
+                Grid.Row="5"
+                Clicked="BtnSubmit_Clicked"
+                />
+    </Grid>
+
+</ContentPage>
